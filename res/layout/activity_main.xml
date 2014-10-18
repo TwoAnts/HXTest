@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+    <RadioGroup
+        android:id="@+id/main_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@color/main_bottom_bg"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton 
+            android:id="@+id/rabtn_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/rabtn_news_background"/>
+        <RadioButton 
+            android:id="@+id/rabtn_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:button="@null"
+            android:background="@drawable/rabtn_msg_background"/>
+        <RadioButton 
+            android:id="@+id/rabtn_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/rabtn_my_background"/>
+        
+        
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bottom" />
+
+</RelativeLayout>
